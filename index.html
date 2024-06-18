@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading-animation</title>
+    <style>
+        body{
+            
+            background-color: black;
+            
+
+        }
+        h1{
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        .loading{
+            height: 6rem;
+            width: 6rem;
+            border: 8px solid;
+            border-color: blue whitesmoke whitesmoke whitesmoke;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            animation: load 1.2s linear infinite;
+        }
+        @keyframes load{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        LOADING ANIMATION
+    </h1>
+
+    <div class="loading">
+
+    </div>
+</body>
+</html>
